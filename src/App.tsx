@@ -1,9 +1,10 @@
 import React, { useState } from "react";
+import Mainpages from "../src/pages/Mainpage";
 
 const App = () => {
   return (
     <div>
-      <div></div>
+      <Mainpages />
     </div>
   );
 };
