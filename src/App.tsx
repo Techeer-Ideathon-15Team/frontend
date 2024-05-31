@@ -1,11 +1,14 @@
 import React, { useState } from "react";
-import Mainpages from "../src/pages/Mainpage";
+import Mainpage from "../src/pages/Mainpage";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 const App = () => {
   return (
-    <div>
-      <Mainpages />
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Mainpage />} />
+      </Routes>
+    </Router>
   );
 };
 
