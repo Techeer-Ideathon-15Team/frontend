@@ -29,33 +29,38 @@ const Mainpage = () => {
       </div>
       <div>
         <button
-          className={`mx-10 shadow-2xl  ${selectedImage === "profe" ? "border-4 border-blue-500" : ""}`}
+          className={`mx-10   ${selectedImage === "profe" ? "border-2 border-gray-500 mx-10" : ""}`}
           onClick={() => handleImageClick("profe")}
         >
           <img src={profe} alt="professional" />
+          <b>상급자</b>
         </button>
+
         <button
-          className={`mx-10 shadow-2xl  ${selectedImage === "girlf" ? "border-4 border-blue-500" : ""}`}
+          className={`mx-10  ${selectedImage === "girlf" ? "border-2 border-gray-500" : ""}`}
           onClick={() => handleImageClick("girlf")}
         >
           <img src={girlf} alt="girlfriend" />
+          <b>애인</b>
         </button>
         <button
-          className={`mx-10 shadow-2xl ${selectedImage === "family" ? "border-4 border-blue-500" : ""}`}
+          className={`mx-10 ${selectedImage === "family" ? "border-2 border-gray-500" : ""}`}
           onClick={() => handleImageClick("family")}
         >
           <img src={family} alt="family" />
+          <b>가족</b>
         </button>
         <button
-          className={`mx-10 shadow-2xl  ${selectedImage === "freind" ? "border-4 border-blue-500" : ""}`}
+          className={`mx-10   ${selectedImage === "freind" ? "border-2 border-gray-500" : ""}`}
           onClick={() => handleImageClick("freind")}
         >
-          <img src={friend} alt="friend" />
+          <img src={friend} alt="friend" style={{ border: "none" }} />
+          <b>친구</b>
         </button>
       </div>
       <div>
         <button
-          className="my-20 bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded"
+          className="my-20 bg-gray-500 hover:bg-gray-300 text-white font-bold py-2 px-4 rounded"
           onClick={handleSelectClick}
         >
           선택하기
