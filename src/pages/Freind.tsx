@@ -4,7 +4,7 @@ import Select from "@mui/material/Select";
 import MenuItem from "@mui/material/MenuItem";
 import FormControl from "@mui/material/FormControl";
 import InputLabel from "@mui/material/InputLabel";
-import introtext from "../assets/introtext.svg";
+import introtext from "../assets/friendlogo.svg";
 import Button from "@mui/material/Button";
 
 const Freind = () => {
@@ -29,13 +29,10 @@ const Freind = () => {
       <img
         src={introtext}
         alt="Intro Text"
-        style={{ marginBottom: "100px", height: "50px" }}
+        style={{ marginBottom: "100px", height: "80px" }}
       />
       <div className="flex flex-row">
         <div style={{ width: "500px" }}>
-          <div>
-            <b>To. 친구</b>
-          </div>
           <TextField
             id="outlined-multiline-static"
             label="상황 설명"
@@ -46,7 +43,7 @@ const Freind = () => {
             sx={{ backgroundColor: "#f5f5f5" }}
           />
         </div>
-        <div className="mx-20 my-5">
+        <div className="mx-20">
           <div style={{ width: "500px" }}>
             <FormControl fullWidth>
               <InputLabel id="dropdown-label-1">말투</InputLabel>
